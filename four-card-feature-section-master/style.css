@@ -151,13 +151,13 @@ main .wrapper > * {
     height: 4px;
 }
 
-@media screen and (width: 400px) {
+@media screen and (min-width: 400px) and (max-width: 1399px) {
     h1{
         font-size: 27px;
     }
 
     header{
-        margin-top: 95px;
+        margin-top: 105px;
         margin-bottom: 80px;
     }
 
@@ -181,6 +181,10 @@ main .wrapper > * {
 
     .column{
         margin-inline: 30px;
+    }
+
+    .card{
+        margin-bottom: 26px;
     }
 
     .card p{
