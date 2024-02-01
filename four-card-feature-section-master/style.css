@@ -120,7 +120,7 @@ main .wrapper > * {
 
 .card img {
     position: absolute;
-    inset: 155px 0 0 255px;
+    inset: 155px 0 0 72.5%;
 }
 
 .column.column-edge{
@@ -153,9 +153,14 @@ main .wrapper > * {
     height: 4px;
 }
 
+@media screen and (max-width: 374px){
+
+}
+
 @media screen and (min-width: 375px) and (max-width: 399px) {
     h1{
         font-size: 32px;
+        margin-inline: 30px;
     }
 
     header .wrapper p{
@@ -178,10 +183,11 @@ main .wrapper > * {
 
     .card{
         margin-bottom: 26px;
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1399px) {
+@media screen and (min-width: 400px) and (max-width: 819px) {
     h1{
         font-size: 27px;
     }
@@ -221,6 +227,51 @@ main .wrapper > * {
         font-size: 14px;
     }
 }
-/* *{
-    border: 1px solid red;
-} */
+
+@media screen and (min-width: 820px) and (max-width: 1229px){
+    h1{
+        font-size: 27px;
+    }
+
+    header{
+        margin-top: 105px;
+        margin-bottom: 80px;
+    }
+
+    header .wrapper p{
+        width: 85%;
+        margin-inline: auto;
+        font-size: 17px;
+    }
+
+    main .wrapper{
+        flex-wrap: wrap;
+    }
+
+    .wrapper{
+        max-width: 1229px;
+    }
+
+    .column.column-edge{
+        margin-top: 0;
+    }
+
+    .column.column.column-edge, .column.column-middle .outer-card{
+        margin-inline: auto;
+    }
+
+    .column.column-middle{
+        margin-inline: auto;
+        order: 3;
+        display: flex;
+    }
+
+
+    main .wrapper > .column.column-edge {
+        flex: 0;
+    }
+
+    .column-middle .card{
+        /* margin-inline: 30px; */
+    }
+}
