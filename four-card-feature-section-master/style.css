@@ -108,12 +108,14 @@ main .wrapper > * {
 
 .card h2{
     margin: 0;
-    font-size: 21px;
+    font-size: 20px;
+    margin-top: 3px;
 }
 
 .card p{
     font-size: 13.3px;
     line-height: 1.9;
+    margin-top: 8px;
 }
 
 .card img {
