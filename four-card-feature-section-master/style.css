@@ -153,6 +153,34 @@ main .wrapper > * {
     height: 4px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 399px) {
+    h1{
+        font-size: 32px;
+    }
+
+    header .wrapper p{
+        width: 85%;
+        margin-inline: auto;
+        font-size: 15px;
+    }
+
+    main .wrapper{
+        flex-wrap: wrap;
+    }
+
+    .column.column-edge{
+        margin-top: 0;
+    }
+
+    .column{
+        margin-inline: 30px;
+    }
+
+    .card{
+        margin-bottom: 26px;
+    }
+}
+
 @media screen and (min-width: 400px) and (max-width: 1399px) {
     h1{
         font-size: 27px;
