@@ -187,7 +187,7 @@ main .wrapper > * {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 819px) {
+@media screen and (min-width: 400px) and (max-width: 750px) {
     h1{
         font-size: 27px;
     }
@@ -228,7 +228,7 @@ main .wrapper > * {
     }
 }
 
-@media screen and (min-width: 820px) and (max-width: 1229px){
+@media screen and (min-width: 751px) and (max-width: 1229px){
     h1{
         font-size: 27px;
     }
