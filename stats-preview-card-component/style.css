@@ -2,13 +2,12 @@
     --font-family-inter: 'Inter', sans-serif;
     --font-family-lexend-leca: 'Lexend Deca', sans-serif;
 
-    --font-size-reg: 15px;
 
     --font-weight-light: 200;
     --font-weight-normal: 400;
     --font-weight-bold: 600;
 
-    --font-size-400: 0.938rem;
+    --font-size-def: 0.938rem;
 
     --color-dark-blue: hsl(233, 47%, 7%);
     --color-dark-desaturated-blue: hsl(244, 38%, 16%);
@@ -35,8 +34,79 @@ html {
 
 h1, h2, h3, h4 {
     color: var(--color-white);
+    font-family: var(--font-family-inter);
 }
 
-h1 span.violet, h2 span.violet, h3 span.violet, h4 span.violet{
+img{
+    width: 100%;
+    height: auto;
+}
+
+.wrapper-flex{
+    display: flex;
+}
+
+.wrapper-main{
+    width: 1110px;
+    height: 445.25px;
+    margin: 176px auto 0;
+    background: var(--color-dark-desaturated-blue);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.wrapper-text{
+    width: 51.5%;
+    padding: 46px 95px 0 72px;
+}
+
+h1{
+    font-size: 35.9px;
+    line-height: 1.25;
+}
+
+h1 span{
     color: var(--color-soft-violet);
+}
+
+.wrapper-text p{
+    font-family: var(--font-family-lexend-leca);
+    font-size: var(--font-size-def);
+    line-height: 1.65;
+}
+
+p, h2 span{
+    color: var(--color-060-transparent-white);
+}
+
+.wrapper-text .wrapper-flex{
+    margin-top: 48px;
+    gap: 65px;
+}
+.wrapper-text .wrapper-flex div p{
+    text-transform: uppercase;
+    font-size: 12.5px;
+    letter-spacing: 0.55px;
+    margin-top: 0;
+}
+.wrapper-text .wrapper-flex div h2{
+    margin-bottom: 0;
+
+}
+
+
+.wrapper-image{
+    /* background: var(--color-soft-violet); */
+}
+
+.wrapper-image img{
+    /* opacity: 0.5; */
+}
+
+.wrapper-image img::after{
+    content: '';
+    display: block;
+    background: blue;
+    height: auto;
+    width: 100%;
 }
